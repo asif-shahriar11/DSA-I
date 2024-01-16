@@ -80,7 +80,7 @@ public class BinarySearchTree {
     /** in order successor */
     public int getInOrderSuccessor(int item) throws Exception {
         Node<Integer> node = searchUtil(root, item);
-        if(node == null)    throw new Exception(item+" does not exist.");
+        if(node == null)    throw new Exception(item +" does not exist.");
         return inOrderSuccessorUtil(node);
     }
 
